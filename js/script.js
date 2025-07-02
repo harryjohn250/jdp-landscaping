@@ -157,10 +157,10 @@ if (serviceFilter && gallery) {
     removal: [
       "images/remove5B.jpg",
       "images/removalBA.jpeg",
-      "images/remove6B.png",
+      "images/remove6B.PNG",
       "images/remove5A.jpg",
       "images/remove4.jpeg",
-      "images/remove6A.png"
+      "images/remove6A.PNG"
     ]
   };
 
