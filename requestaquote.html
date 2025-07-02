@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Quote - JDP Landscaping</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="JDP Landscaping Logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="services.html">Services</a>
+          <ul class="dropdown-content">
+            <li><a href="trimming.html">Trimming</a></li>
+            <li><a href="mulching.html">Mulching</a></li>
+            <li><a href="hauloff.html">Haul Off</a></li>
+            <li><a href="removal.html">Removal</a></li>
+          </ul>
+        </li>
+        <li><a href="recentwork.html">Recent Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="requestaquote.html" class="active">Request a Quote</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Request a Quote</h1>
+
+    <form id="quote-form" action="https://formsubmit.co/1b02098b21dea661bf167adfe25d61ad" method="POST">
+      <!-- Formsubmit required hidden fields -->
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_subject" value="New Quote Request from JDP Landscaping">
+      <input type="hidden" name="_next" value="http://webpages.charlotte.edu/hjohn2/itis3135/JohnHarryProject4/thankyou.html">
+
+      <label for="name">Full Name:</label>
+      <div class="tooltip-container">
+        <input type="text" id="name" name="name" required>
+        <span class="tooltip-text">Enter your full name</span>
+      </div>
+
+      <label for="phone">Phone Number:</label>
+      <div class="tooltip-container">
+        <input type="tel" id="phone" name="phone" required>
+        <span class="tooltip-text">Enter a 10-digit phone number</span>
+      </div>
+
+      <label for="address">Address:</label>
+      <div class="tooltip-container">
+        <input type="text" id="address" name="address">
+        <span class="tooltip-text">Enter the service location</span>
+      </div>
+
+      <label for="service">Service Type:</label>
+      <div class="tooltip-container">
+        <select id="service" name="service" required>
+          <option value="">-- Select Service --</option>
+          <option value="trimming">Trimming</option>
+          <option value="mulching">Mulching</option>
+          <option value="hauloff">Haul Off</option>
+          <option value="removal">Removal</option>
+        </select>
+        <span class="tooltip-text">Select the service you’re requesting</span>
+      </div>
+
+      <label for="notes">Additional Notes:</label>
+      <div class="tooltip-container">
+        <textarea id="notes" name="notes"></textarea>
+        <span class="tooltip-text">Optional: Add any details or preferences you have</span>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2025 JDP Landscaping |
+      Follow us on
+      <a href="https://nextdoor.com/profile/014fB-TPJzBfH3pCP/?init_source=search&is=search&query=james+picerno&referrer=nextdoor" target="_blank">Nextdoor</a>
+    </p>
+  </footer>
+
+  <button id="dark-mode-toggle">Toggle Dark Mode</button>
+</body>
+</html>
